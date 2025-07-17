@@ -1,5 +1,3 @@
-
-
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -41,6 +39,7 @@ nav{
   color: white;
   padding: 18px 35px;
   border-radius: 5px;
+  border: 0;
 }
 .section-title{
   font-size: 35px;
@@ -59,7 +58,7 @@ nav ul{
   display: flex;
   align-items: center;
 }
-nav ul li {
+nav ul li{
   list-style: none;
   margin-right: 50px;
 }
@@ -74,7 +73,6 @@ nav li a {
   display: flex;
   justify-content: space-between;
   margin: 0 35px 0 230px;
-  /* background-color: #FFF8F3; */
 }
 .banner-content{
   max-width: 580px;
@@ -168,4 +166,24 @@ footer input[type="text"],footer input[type="email"],footer textarea {
   padding: 10px 20px;
   margin-bottom: 24px;
   border: none;
+}
+/* responsive meadia query */
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:576px){
+  .skills-container,.resume-container,footer{
+    flex-direction: column;
+  }
+  footer{
+    padding: 20px;
+  }l
+  .footer-column{
+    width: 100%;
+  }
+  
+footer input[type="text"],footer input[type="email"],footer textarea {
+  width: calc(100% - 40px);
+}
 }
